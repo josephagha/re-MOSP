@@ -1,0 +1,224 @@
+@import "../2_base/2_base";
+
+// Mobile devices
+@media (max-width: 767px) {
+  .completeReservationContent {
+    margin: 20px;
+    padding-bottom: 50px;
+  }
+  .reservationSendMeBackLink {
+    color: $blue;
+    display: block;
+
+    svg {
+      height: 14px;
+      width: 15px;
+    }
+    &:hover {
+      color: $darkBlue;
+      text-decoration: none;
+    }
+  }
+  .reservationTitle {
+    text-align: center;
+    display: block;
+    margin-top: 20px !important;
+  }
+  .reservationForm {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+
+    input {
+      display: none;
+    }
+
+    a {
+      color: $blue;
+    }
+    .checkmarkContainer {
+      margin: auto;
+      display: flex;
+    }
+    .checkmark {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      border: solid 1px $darkBlue;
+      border-radius: 2px;
+      background-color: $white;
+      svg {
+        opacity: 0;
+      }
+    }
+    .checkmarkChecked {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      border: solid 1px $green;
+      border-radius: 2px;
+      background-color: $green;
+
+      svg {
+        margin-top: -5px;
+      }
+    }
+
+    .reservationButton {
+      border-radius: 5px;
+      border: none;
+      color: $white;
+      background: $blue;
+      padding: 15px 2% 15px 2%;
+      width: 100%;
+    }
+    .reservationButtonDisabled {
+      opacity: 0.5;
+    }
+  }
+
+  .privacyPolicyParagraph {
+    width: 95%;
+    height: 20vh;
+    margin: auto;
+    padding: 5px;
+    overflow-y: scroll;
+    a {
+      color: $blue;
+    }
+  }
+
+  /* width */
+  .privacyPolicyParagraph::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 4px;
+  }
+
+  /* Track */
+  .privacyPolicyParagraph::-webkit-scrollbar-track {
+    background: $lightGrey;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  .privacyPolicyParagraph::-webkit-scrollbar-thumb {
+    background: $grey;
+    border-radius: 10px;
+    width: 2px;
+  }
+
+  /* Handle on hover */
+  .privacyPolicyParagraph::-webkit-scrollbar-thumb:hover {
+    background: $darkGrey;
+  }
+}
+// Desktop devices
+@media (min-width: 768px) {
+  .completeReservationContent {
+    margin: 65px;
+  }
+  .reservationSendMeBackLink {
+    color: $blue;
+    display: block;
+    svg {
+      height: 14px;
+      width: 15px;
+    }
+    &:hover {
+      color: $darkBlue;
+      text-decoration: none;
+    }
+  }
+  .reservationTitle {
+    text-align: center;
+    margin-top: 20% !important;
+  }
+  .reservationForm {
+    width: 100%;
+    margin: auto;
+
+    input {
+      display: none;
+    }
+
+    a {
+      color: $blue;
+    }
+
+    .checkmark {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      border: solid 1px $darkBlue;
+      border-radius: 2px;
+      background-color: $white;
+      svg {
+        opacity: 0;
+      }
+    }
+    .checkmarkChecked {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      border: solid 1px $green;
+      border-radius: 2px;
+      background-color: $green;
+
+      svg {
+        margin-top: -5px;
+      }
+    }
+
+    .checkmarkText {
+      font-size: 13px;
+    }
+
+    .reservationButton {
+      border-radius: 5px;
+      border: none;
+      color: $white;
+      background: $blue;
+      padding: 15px 2% 15px 2%;
+      width: 100%;
+    }
+
+    .reservationButtonDisabled {
+      opacity: 0.5;
+    }
+  }
+
+  .privacyPolicyParagraph {
+    width: 100%;
+    height: 166px;
+    margin: auto;
+    padding: 5px;
+    overflow-y: scroll;
+    a {
+      color: $blue;
+    }
+  }
+
+  /* width */
+  .privacyPolicyParagraph::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 4px;
+  }
+
+  /* Track */
+  .privacyPolicyParagraph::-webkit-scrollbar-track {
+    background: $lightGrey;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  .privacyPolicyParagraph::-webkit-scrollbar-thumb {
+    background: $grey;
+    border-radius: 10px;
+    width: 2px;
+  }
+
+  /* Handle on hover */
+  .privacyPolicyParagraph::-webkit-scrollbar-thumb:hover {
+    background: $darkGrey;
+  }
+}

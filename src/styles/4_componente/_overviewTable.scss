@@ -1,0 +1,146 @@
+@import "../2_base/2_base";
+
+// Mobile devices
+@media (max-width: 767px) {
+  .overviewContent {
+    margin: 20px;
+  }
+  .linkSendMeBack {
+    color: $blue;
+    display: block;
+    text-align: left;
+
+    svg {
+      height: 14px;
+      width: 15px;
+    }
+    &:hover {
+      color: $darkBlue;
+      text-decoration: none;
+    }
+  }
+
+  .overviewItemContainer {
+    width: 100%;
+    height: 105px;
+    margin: auto;
+    margin-bottom: 10px;
+    border: solid 1px #e5e5e561;
+    border-radius: 5px;
+    display: flex;
+    -ms-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+  }
+
+  .overviewItemImage {
+    width: 30%;
+    height: 103px;
+
+    img {
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5px 0 0 5px;
+    }
+  }
+
+  .overviewItemInfoContainer {
+    width: 70%;
+  }
+
+  h2 {
+    display: inline;
+  }
+
+  .donatioArtAndAmountContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .donatioArt {
+  }
+  .donatioAmount {
+  }
+
+  .overviewItemStatusContainer {
+    height: 25px;
+    svg {
+      width: 25px;
+    }
+  }
+}
+// Desktop devices
+@media (min-width: 768px) {
+  .overviewContent {
+    margin: 60px 70px auto 70px;
+  }
+  .linkSendMeBack {
+    color: $blue;
+    display: block;
+    text-align: left;
+
+    svg {
+      height: 14px;
+      width: 15px;
+    }
+    &:hover {
+      color: $darkBlue;
+      text-decoration: none;
+    }
+  }
+
+  .overviewItemContainer {
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 15px;
+    border: solid 1px #e5e5e561;
+    border-radius: 5px;
+    display: flex;
+  }
+
+  .overviewItemImage {
+    width: 25%;
+    height: 98px;
+
+    img {
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5px 0 0 5px;
+    }
+  }
+
+  .overviewItemBg {
+    width: 30%;
+    height: 98px;
+    background-color: $grey;
+  }
+
+  .overviewItemInfoContainer {
+    width: 75%;
+  }
+
+  h2 {
+    display: inline;
+  }
+
+  .donatioArtAndAmountContainer {
+    display: flex;
+    justify-content: space-between;
+    max-height: 22px;
+  }
+  .donatioArt {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .donatioAmount {
+  }
+
+  .overviewItemStatusContainer {
+    height: 25px;
+    svg {
+      width: 20px;
+    }
+  }
+}

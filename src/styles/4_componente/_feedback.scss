@@ -1,0 +1,125 @@
+@import "../2_base/2_base";
+
+// Mobile devices
+@media (max-width: 767px) {
+  .feedbackContainer {
+    margin-top: 30px;
+    svg {
+      width: 50px;
+      height: 50px;
+      margin: auto;
+      display: block;
+    }
+    p {
+      width: 90%;
+      margin: auto;
+    }
+  }
+  .linkSendMeBack {
+    color: $blue;
+    display: block;
+    text-align: center;
+
+    svg {
+      height: 14px;
+      width: 25px;
+    }
+    &:hover {
+      color: $darkBlue;
+      text-decoration: none;
+    }
+  }
+  .reseervierungTitle {
+    margin: auto;
+  }
+  .button-outline {
+    border-radius: 5px;
+    border: solid 1px $blue;
+    width: 60%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: $blue;
+  }
+
+  .FeedbackOverviewLink {
+    color: $blue;
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    svg {
+      height: 14px;
+      width: 25px;
+    }
+    &:hover {
+      color: $darkBlue;
+      text-decoration: none;
+    }
+  }
+}
+// Desktop devices
+@media (min-width: 768px) {
+  .feedbackContainer {
+    margin-top: 100px;
+    svg {
+      width: 75px;
+      height: 75px;
+      margin: auto;
+      display: block;
+    }
+    p {
+      width: 90%;
+      margin: auto;
+    }
+  }
+  .linkSendMeBack {
+    color: $blue;
+    display: block;
+    text-align: center;
+
+    svg {
+      height: 14px;
+      width: 25px;
+    }
+    &:hover {
+      color: $darkBlue;
+      text-decoration: none;
+    }
+  }
+  .reseervierungTitle {
+    margin: auto;
+  }
+  .button-outline {
+    border-radius: 5px;
+    border: solid 1px $blue;
+    width: 40%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: $blue;
+  }
+
+  .FeedbackOverviewLink {
+    color: $blue;
+    font-size: 15px;
+    display: block;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 17vh;
+    svg {
+      height: 14px;
+      width: 25px;
+    }
+    &:hover {
+      color: $darkBlue;
+      text-decoration: none;
+    }
+  }
+}

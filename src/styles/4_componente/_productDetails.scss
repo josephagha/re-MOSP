@@ -1,0 +1,75 @@
+@import "../2_base/2_base";
+
+// Mobile devices
+@media (max-width: 767px) {
+  .titleOfTheProduct {
+    width: 60%;
+    margin: 20px 20px 10px 20px;
+  }
+  .ProductTextcontainer {
+    position: relative;
+    margin: 0px 20px 0px 20px;
+  }
+
+  .productText {
+    padding-bottom: 40vh;
+    overflow-y: scroll;
+  }
+}
+
+// Desktop devices
+@media (min-width: 768px) {
+  .titleOfTheProduct {
+    width: 60%;
+    margin: 67px 60px 20px 70px;
+  }
+  .ProductTextcontainer {
+    position: relative;
+    margin: 0px 65px 0px 70px;
+  }
+
+  .productText {
+    height: 358px;
+    overflow-y: scroll;
+    padding-bottom: 8vh;
+    padding-right: 4px;
+  }
+
+  /* width */
+  .productText::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 4px;
+  }
+  .productText::-moz-scrollbar {
+    -moz-appearance: none;
+    width: 4px;
+  }
+
+  /* Track */
+  .productText::-webkit-scrollbar-track {
+    background: $white;
+    border-radius: 10px;
+  }
+  .productText::-moz-scrollbar-track {
+    background: $white;
+    border-radius: 10px;
+  }
+  /* Handle */
+  .productText::-webkit-scrollbar-thumb {
+    background: $white;
+    border-radius: 10px;
+    width: 2px;
+  }
+  .productText::-moz-scrollbar-thumb {
+    background: $white;
+    border-radius: 10px;
+    width: 2px;
+  }
+  /* Handle on hover */
+  .productText::-webkit-scrollbar-thumb:hover {
+    background: $white;
+  }
+  .productText::-moz-scrollbar-thumb:hover {
+    background: $white;
+  }
+}

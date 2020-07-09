@@ -1,0 +1,19 @@
+@import "../2_base/2_base";
+
+// Mobile devices
+@media (max-width: 767px) {
+  .imgProductMedia {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+// Desktop devices
+@media (min-width: 768px) {
+  .imgProductMedia {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0;
+  }
+}

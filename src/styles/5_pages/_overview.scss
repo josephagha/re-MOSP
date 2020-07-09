@@ -1,0 +1,63 @@
+@import "../2_base/2_base";
+
+// Mobile devices
+@media (max-width: 767px) {
+  .overviewContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .overviewPart1Container {
+    display: none;
+  }
+  .overviewPart2Container {
+    width: 100%;
+    height: 75%;
+  }
+}
+// Desktop devices
+@media (min-width: 768px) {
+  .overviewContainer {
+    //max-width: 1000px;
+    height: 725px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
+  .overviewPart1Container {
+    height: 100%;
+    overflow: hidden;
+  }
+  .overviewPart2Container {
+    width: 660px;
+    height: 100%;
+    position: relative;
+    overflow: scroll;
+  }
+}
+
+// XL Desktop devices
+@media (min-width: 990px) {
+  .overviewContainer {
+    width: 100%;
+    height: 725px;
+    display: flex;
+    flex-direction: row;
+  }
+  .productPart1ContainerMobile {
+    display: none;
+  }
+  .overviewPart1Container {
+    min-height: 100%;
+    width: 75%;
+    overflow: hidden;
+  }
+  .overviewPart2Container {
+    width: 660px;
+    min-height: 100%;
+    position: relative;
+  }
+}

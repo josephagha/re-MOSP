@@ -1,0 +1,180 @@
+@import "./typography";
+@import "./colors";
+body,
+html {
+  max-height: 725px;
+}
+#App {
+  max-height: 725px;
+}
+* {
+  font-family: "Open Sans", sans-serif;
+}
+.content {
+  height: 100%;
+}
+.opacity50 {
+  opacity: 0.5;
+}
+.d-None {
+  display: none;
+}
+.d-Block {
+  display: block;
+}
+.blockCenter {
+  display: block;
+  margin: auto;
+}
+.textCenter {
+  text-align: center;
+}
+.label {
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  color: $darkBlue !important;
+}
+
+.vertical-center-70 {
+  min-height: 70%;
+  min-height: calc(70vh);
+
+  display: flex;
+  align-items: center;
+}
+.vertical-center-50 {
+  min-height: 50%;
+  min-height: calc(50vh);
+
+  display: flex;
+  align-items: center;
+}
+
+//margin and padding
+
+.m0 {
+  margin: 0px;
+}
+.mt0 {
+  margin-top: 0px;
+}
+.mr0 {
+  margin-right: 0px;
+}
+.mb0 {
+  margin-bottom: 0px;
+}
+.ml0 {
+  margin-left: 0px;
+}
+
+$sizes: 12;
+
+@mixin margin-classes {
+  @for $i from 1 through $sizes {
+    $margin: $i * 5px;
+    /* margin #{$margin} */
+    .m#{$i} {
+      margin: $margin;
+    }
+    .ml#{$i} {
+      margin-left: $margin;
+    }
+    .mr#{$i} {
+      margin-right: $margin;
+    }
+    .mt#{$i} {
+      margin-top: $margin;
+    }
+    .mb#{$i} {
+      margin-bottom: $margin;
+    }
+    .mx#{$i} {
+      margin-left: $margin;
+      margin-right: $margin;
+    }
+    .my#{$i} {
+      margin-top: $margin;
+      margin-bottom: $margin;
+    }
+  }
+}
+@include margin-classes;
+
+.p0 {
+  padding: 0px;
+}
+.pt0 {
+  padding-top: 0px;
+}
+.pr0 {
+  padding-right: 0px;
+}
+.pb0 {
+  padding-bottom: 0px;
+}
+.pl0 {
+  padding-left: 0px;
+}
+
+@mixin padding-classes {
+  @for $i from 1 through $sizes {
+    $padding: $i * 5px;
+    /* padding #{$padding} */
+    .p#{$i} {
+      padding: $padding;
+    }
+    .pl#{$i} {
+      padding-left: $padding;
+    }
+    .pr#{$i} {
+      padding-right: $padding;
+    }
+    .pt#{$i} {
+      padding-top: $padding;
+    }
+    .pb#{$i} {
+      padding-bottom: $padding;
+    }
+    .px#{$i} {
+      padding-left: $padding;
+      padding-right: $padding;
+    }
+    .py#{$i} {
+      padding-top: $padding;
+      padding-bottom: $padding;
+    }
+  }
+}
+@include padding-classes;
+
+// test colors
+
+.red {
+  background: red;
+  color: white;
+}
+.blue {
+  background: rgb(0, 140, 255);
+  color: white;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}

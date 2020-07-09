@@ -1,0 +1,189 @@
+@import "../2_base/2_base";
+
+// Mobile devices
+@media (max-width: 767px) {
+  .productOptionsContener {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 245px;
+    background: rgb(248, 248, 248);
+    background: linear-gradient(
+      0deg,
+      rgba(248, 248, 248, 1) 0%,
+      rgba(248, 248, 248, 0.9347999291784702) 83%,
+      rgba(255, 255, 255, 0) 98%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+  .productOptionsContener2 {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background: rgb(248, 248, 248);
+    background: linear-gradient(
+      0deg,
+      rgba(248, 248, 248, 1) 0%,
+      rgba(248, 248, 248, 0.9347999291784702) 83%,
+      rgba(255, 255, 255, 0) 98%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+  .productOptions {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    bottom: 8%;
+  }
+  .optionInput {
+    display: none;
+  }
+  .selectedLabel {
+    background: $blue !important;
+    color: $white !important;
+  }
+  .optionButton {
+    width: 22%;
+    height: 36px;
+    text-align: center;
+    line-height: 34px;
+    border: 1px $blue solid;
+    border-radius: 20px;
+    background: $lightGrey;
+    color: $blue;
+    margin-left: 4%;
+
+    &:first-child {
+      margin-left: 0;
+    }
+    &:hover {
+      background: $blue;
+      color: $white;
+    }
+  }
+
+  .overviewLink {
+    color: $blue;
+    font-size: 15px;
+
+    display: block;
+    text-align: center;
+
+    svg {
+      height: 14px;
+      width: 25px;
+    }
+    &:hover {
+      color: $darkBlue;
+      text-decoration: none;
+    }
+  }
+
+  .orderButton {
+    width: 100%;
+    height: 60px;
+    background-color: $blue;
+    color: $white;
+    border: none;
+    border-radius: 3px;
+  }
+  .orderButtonDisabled {
+    opacity: 0.4;
+  }
+}
+// Desktop devices
+@media (min-width: 768px) {
+  .productOptionsContener {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 34%;
+    padding-top: 65px;
+    background: rgb(248, 248, 248);
+    background: linear-gradient(
+      0deg,
+      rgba(248, 248, 248, 1) 0%,
+      rgba(248, 248, 248, 0.9347999291784702) 83%,
+      rgba(255, 255, 255, 0) 98%,
+      rgba(255, 255, 255, 0) 100%
+    );
+
+    background: rgb(248, 248, 248);
+    background: linear-gradient(
+      0deg,
+      rgba(248, 248, 248, 1) 82%,
+      rgba(248, 248, 248, 0.817155756207675) 92%,
+      rgba(248, 248, 248, 0.1702031602708804) 100%
+    );
+  }
+  .productOptions {
+    width: 73%;
+    margin: auto;
+  }
+  .optionInput {
+    display: none;
+  }
+  .selectedLabel {
+    background: $blue !important;
+    color: $white !important;
+  }
+  .optionButton {
+    width: 22%;
+    height: 36px;
+    text-align: center;
+    line-height: 34px;
+    border: 1px $blue solid;
+    border-radius: 20px;
+    background: $lightGrey;
+    color: $blue;
+    margin-left: 4%;
+
+    &:first-child {
+      margin-left: 0;
+    }
+    &:hover {
+      background: $blue;
+      color: $white;
+    }
+  }
+
+  .overviewLink {
+    color: $blue;
+    font-size: 15px;
+
+    display: block;
+    text-align: center;
+
+    svg {
+      height: 14px;
+      width: 25px;
+    }
+    &:hover {
+      color: $darkBlue;
+      text-decoration: none;
+    }
+  }
+
+  .orderButton {
+    width: 100%;
+    height: 60px;
+    background-color: $blue;
+    color: $white;
+    border: none;
+    border-radius: 3px;
+  }
+  .orderButtonDisabled {
+    width: 100%;
+    height: 60px;
+    background-color: $blue;
+    color: $white;
+    border: none;
+    border-radius: 3px;
+    opacity: 0.4;
+  }
+}
+
+// XL Desktop devices
+@media (min-width: 990px) {
+}
